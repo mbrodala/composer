@@ -215,6 +215,10 @@ simply running `composer test`:
 > are easily accessible. In this example no matter if the `phpunit` binary is
 > actually in `vendor/bin/phpunit` or `bin/phpunit` it will be found and executed.
 
+Similar to the `run-script` command you can give additional arguments to scripts,
+e.g. `composer test -- --filter <pattern>` will pass `--filter <pattern>` along
+to the `phpunit` script.
+
 ## Referencing scripts
 
 To enable script re-use and avoid duplicates, you can call a script from another
